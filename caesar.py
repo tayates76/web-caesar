@@ -1,6 +1,6 @@
 from helpers import alphabet_position, rotate_character, isupper, ALPHA_STRING
 
-def rotate_string(text, rot):
+def rotate_string(rot, text):
     """receives as input a string and an integer rot which specifies the rotation amount. Your function should return the result of rotating each letter in the text by rot places to the right"""
     new_text = ""
     alpha = ALPHA_STRING()
@@ -19,7 +19,7 @@ def main ():
     # print(string)
     rotate = int(input("Rotate by: \n"))
     # print(rotate)
-    print(rotate_string(string, rotate))
+    print(rotate_string(rotate, string))
 
 if __name__ == "__main__":
     main()
